@@ -1,0 +1,27 @@
+# Accordion Component
+
+To use the accordion component, follow these steps:
+
+1. Install the `accordion` package by running the following command:
+
+   ```
+    npm i thrush
+   ```
+
+2. Import the necessary components from the `@/components/ui/accordion` module:
+
+   ```javascript
+   import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+   ```
+
+3. Add the accordion component to your markup:
+   ```html
+   <Accordion type="single" collapsible>
+     <AccordionItem value="item-1">
+       <AccordionTrigger>Is it accessible?</AccordionTrigger>
+       <AccordionContent> Yes. It adheres to the WAI-ARIA design pattern. </AccordionContent>
+     </AccordionItem>
+   </Accordion>
+   ```
+
+Now you can use the accordion component in your project.
