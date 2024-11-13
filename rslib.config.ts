@@ -6,6 +6,7 @@ export default defineConfig({
     entry: {
       index: ['./src/**'],
     },
+    aliasStrategy: 'prefer-tsconfig',
   },
   lib: [
     {
@@ -16,6 +17,10 @@ export default defineConfig({
   ],
   output: {
     target: 'web',
+    externals: {
+      react: 'React',
+      'react-dom': 'ReactDOM',
+    },
   },
   plugins: [
     pluginReact({
