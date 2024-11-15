@@ -54,6 +54,7 @@ export * from './lib/utils';
 
 // Theme
 
-export * from './theme';
+export * from './theme/config';
+export * from './theme/provider';
 
 import './styles/globals.css';
