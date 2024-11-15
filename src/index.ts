@@ -52,4 +52,8 @@ export * from './hooks/use-toast';
 // Utilities
 export * from './lib/utils';
 
+// Theme
+
+export * from './theme';
+
 import './styles/globals.css';
