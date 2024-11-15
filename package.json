@@ -24,7 +24,7 @@
     }
   },
   "scripts": {
-    "prepare": "husky",
+    "prepare": "npm run build",
     "build": "rslib build",
     "build:storybook": "storybook build",
     "check": "biome check --write",
