@@ -53,8 +53,6 @@ export * from './hooks/use-toast';
 export * from './lib/utils';
 
 // Theme
-
-export * from './theme/config';
 export * from './theme/provider';
 
 import './styles/globals.css';

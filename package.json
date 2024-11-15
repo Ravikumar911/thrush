@@ -8,13 +8,16 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./index.css": "./dist/styles/globals.css"
+    "./index.css": "./dist/styles/globals.css",
+    "./theme.config.js": "./theme.config.js"
   },
   "module": "./dist/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist",
-    "./dist/styles/globals.css"
+    "./dist/styles/globals.css",
+    "theme.config.js"
   ],
   "publishConfig": {
     "access": "public"

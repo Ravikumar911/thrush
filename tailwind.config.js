@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { theme} = require('./src/theme/config');
+const theme = require('./theme.config');
 module.exports = {
   darkMode: ['class'],
   content: [
