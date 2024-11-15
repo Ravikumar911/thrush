@@ -75,4 +75,4 @@ const theme: Config['theme'] = {
     },
   } 
 
-  export default theme
+export { theme }
