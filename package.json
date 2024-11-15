@@ -1,6 +1,6 @@
 {
   "name": "@godevops/uikit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "exports": {
     ".": {
@@ -19,7 +19,7 @@
     "access": "public"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "build": "rslib build",
     "build:storybook": "storybook build",
     "check": "biome check --write",
