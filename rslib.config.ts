@@ -1,31 +1,29 @@
-import { pluginReact } from '@rsbuild/plugin-react';
-import { defineConfig } from '@rslib/core';
+import { pluginReact } from "@rsbuild/plugin-react";
+import { defineConfig } from "@rslib/core";
 
 export default defineConfig({
   source: {
     entry: {
-      index: ['./src/**'],
+      index: ["./src/index.ts"],
     },
-    aliasStrategy: 'prefer-tsconfig',
+    alias: {
+      "@": "./src",
+    },
   },
   lib: [
     {
-      bundle: false,
+      bundle: true,
       dts: true,
-      format: 'esm',
+      format: "esm",
     },
   ],
   output: {
-    target: 'web',
-    externals: {
-      react: 'React',
-      'react-dom': 'ReactDOM',
-    },
+    target: "web",
   },
   plugins: [
     pluginReact({
       swcReactOptions: {
-        runtime: 'classic',
+        runtime: "classic",
       },
     }),
   ],
