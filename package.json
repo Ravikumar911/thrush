@@ -8,14 +8,11 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./index.css": "./dist/static/css/index.css"
+    "./index.css": "./dist/styles/globals.css"
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist",
-    "dist/static/css/index.css"
-  ],
+  "files": ["dist"],
   "publishConfig": {
     "access": "public"
   },
