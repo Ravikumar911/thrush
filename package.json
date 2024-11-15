@@ -1,6 +1,6 @@
 {
   "name": "@godevops/uikit",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "type": "module",
   "sideEffects": false,
   "exports": {
@@ -204,7 +204,10 @@
   },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist", "./dist/styles/globals.css"],
+  "files": [
+    "dist",
+    "./dist/styles/globals.css"
+  ],
   "publishConfig": {
     "access": "public"
   },
