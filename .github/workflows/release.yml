@@ -5,11 +5,25 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: "Checkout"
+        uses: actions/checkout@v4
+      - name: "Set up Node.js"
+        uses: actions/setup-node@v3
         with:
           node-version: "22"
+      - name: "Automated Version Bump"
+        uses: "phips28/gh-action-bump-version@master"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          minor-wording: "add,Adds,new"
+          major-wording: "MAJOR,cut-major"
+          patch-wording: "patch,fixes"
+          rc-wording: "RELEASE,alpha"
+          default: "patch"
       - run: npm ci
       - uses: JS-DevTools/npm-publish@v3
         with:
