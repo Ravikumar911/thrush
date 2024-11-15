@@ -15,6 +15,9 @@
     "dist",
     "dist/static/css/index.css"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "rslib build",
     "build:storybook": "storybook build",
@@ -142,4 +145,5 @@
     "vaul": "^1.1.1",
     "zod": "^3.23.8"
   }
+  
 }
